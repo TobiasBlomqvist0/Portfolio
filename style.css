@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Outfit&family=Yellowtail&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    color: #EDF2F4;
+}
+
+#navbar {
+    min-width: 100%;
+    height: 100px;
+    background-image: linear-gradient( rgba(255, 0, 0, 1), rgba(0, 0, 0, 0.01));
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+
+#Colors {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#changecolor {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #EDF2F4;
+}
+
+h5:hover {
+    border-bottom: red solid 5px;
+    margin-bottom: 0;
+}
+
+h1 {
+    margin: 24px 40px 24px 40px;
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+}
+
+#study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+p {
+    color: #EDF2F4 ;
+    font-size: 2rem;
+    margin-top: 4px;
+    font-family: 'Outfit', sans-serif;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    color: #EDF2F4;
+    text-decoration: none;
+}   
+
+.navbar-link:hover, .Product-link:hover{
+    border-bottom: 5px solid red;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2,h3 {
+    color: white;
+    font-size: 5rem;
+    margin-top: 20px;
+    border-bottom: 5px solid red;
+    font-family: 'Yellowtail', cursive;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projectinfo {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    margin-top: 240px
+}
+
+#allprojects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 125px;
+    width: 100%;
+    height: 600px;
+}
+
+.project {
+    background: rgb(251,0,0);
+    background: radial-gradient(circle, rgba(251,0,0,1) 10%, rgba(0,0,0,0.1) 68%);
+    border-radius: 50%;
+    width: 600px;
+    height: 500px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    border: rgba(255, 0, 0, 0.1) solid 5px;
+}
+
+.project-tile {
+    width: 400px;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-tile a {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Outfit', sans-serif;
+}
+
+.project-tile a:hover {
+    border-bottom: rgba(255, 0, 0, 0.7);
+}
+
+#more {
+    display: flex;
+    justify-content: center;
+}
+
+#profile-link {
+    font-size: 3rem;
+    border-bottom: red solid 5px;
+    font-family: 'Yellowtail', cursiv
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+}
+
+#contactinfo {
+    width: 50%;
+    height: 200px;
+    background: linear-gradient(rgba(255, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    border-radius: 24px;
+    margin: 240px 0 80px 0;
+    box-shadow: rgba(251,0,0,1) 1px 0.3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconify {
+    width: 125px;
+    height: 125px;
+    border: none;
+    margin: 0 24px 0 24px;
+}
+
+@media (max-width: 1200px) {
+    #allprojects {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    img {
+        width: 500px;
+    }
+    h3 {
+        font-size: 4em;
+    }
+    .iconify {
+        width: 75px;
+        height: 75px;
+    }
+    #contactinfo {
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    #contactinfo {
+        width: 70%;
+    }
+    h3 {
+        font-size: 3rem
+    }
+    #contactinfo {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 400px;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 1.6rem
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+        margin: 12px 20px 12px 20px;
+    }
+    .iconify {
+        width: 50px;
+        height: 50px;
+        margin: 0 12px 0 12px;
+    }
+    #contactinfo {
+        height: 150px;
+    }
+    .project {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 250px;
+        height: 200px;
+    }
+    .project {
+        height: 300px;
+        padding-top: 100px;
+    }
+    h1 {
+        margin: 0 6px 0 6px;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+    #allprojects {
+        margin-top: 60px;
+    }
+    .project {
+        max-width: 300px;
+        min-width: 150px;
+    }
+    .project-tile a {
+        font-size: 1.5rem;
+    }
+    #more a {
+        font-size: 2rem;
+    }
+    #contactinfo {
+        margin-top: 120px;
+    }
+}
